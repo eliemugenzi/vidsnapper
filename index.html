@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VidSnapper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>VidSnapper</h1>
+    </div>
+    <div class="top-container">
+        <video id="video">Stream Not Available</video>
+        <button class="btn btn-dark" id="photo-button">
+            Take a Photo
+        </button>
+        <select id="photo-filter" class="select">
+            <option value="none">Normal</option>
+            <option value="grayscale(100%)">Grayscale</option>
+            <option value="sepia(100%)">Sepia</option>
+            <option value="invert(100%)">Invert</option>
+            <option value="hue-rotate(90deg)">Hue</option>
+            <option value="blur(10px)">Blur</option>
+            <option value="contrast(200%)">Contrast</option>
+        </select>
+        <button id="clear-button" class="btn btn-light">Clear</button>
+        <canvas id="canvas"></canvas>
+    </div>
+    <div class="bottom-container">
+        <div id="photos">
+
+        </div>
+    </div>
+</body>
+<script src="./js/main.js"></script>
+
+</html>
