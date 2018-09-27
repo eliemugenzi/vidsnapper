@@ -9,6 +9,13 @@ body {
 #canvas {
   display: none;
 }
+@media (max-width: 768px) {
+  video {
+    max-width: 80vw;
+    max-height: 80vh;
+    margin: auto 10%;
+  }
+}
 .navbar {
   padding: 15px;
   height: 40px;
